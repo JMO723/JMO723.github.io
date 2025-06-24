@@ -49,14 +49,13 @@ h1 {
 }
 
 .center-text {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
+   text-align: center;
 }
 
+.center-text p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
 .center-img {
   display: block;
   margin-left: auto;
