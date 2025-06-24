@@ -36,28 +36,26 @@ h1 {
 }
 
 /* Reference: Shraddha. (2022, October 18). How to Place HTML Div Side by Side. Delft Stack. https://www.delftstack.com/howto/html/html-divs-side-by-side/ */
-
-
 .flex-parent {
   display: flex;
   padding: 20px;
-  gap: 10px;
+  gap: 40px;
 }
 
 .flex-child {
   flex: 1;
   padding: 20px;
-  #border: 1px solid black;
+  border: 1px solid black;
 }
 
 .center-text {
-   text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
 }
 
-.center-text p {
-  font-size: 1.2em;
-  line-height: 1.5;
-}
 .center-img {
   display: block;
   margin-left: auto;
