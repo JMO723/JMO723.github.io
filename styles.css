@@ -3,7 +3,7 @@ body {
 }
 .navbar {
   background-color: #222;
-  padding: .01em 0;
+  padding: 0em
 }
 
 .navbar ul {
@@ -22,7 +22,7 @@ body {
   color: aliceblue;
   font-weight: bold;
   font-size: 1.2em;
-  padding: 1em;
+  padding: .7em;
   border-radius: 20px; 
 }
 
