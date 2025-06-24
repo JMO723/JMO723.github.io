@@ -3,7 +3,7 @@ body {
 }
 .navbar {
   background-color: #222;
-  padding: .em 0;
+  padding: .01em 0;
 }
 
 .navbar ul {
@@ -29,4 +29,8 @@ body {
 .navbar a:hover {
   background-color: #4caf50;
   color:#222;
+}
+
+h1 {
+  text-align: center;
 }
