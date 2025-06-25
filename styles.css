@@ -155,3 +155,31 @@ hr {
   margin: 3%;
   visibility: hidden;
 }
+
+.hr-alt {
+  margin:1%
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {  
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: #B3FFb3;
+}
+
+tr:nth-child(odd) {
+  background-color: #E0FFE0;
+}
+
+.arrow-d {
+  display:block;
+  text-align:center;
+}
+
+
+
