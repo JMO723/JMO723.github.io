@@ -76,6 +76,7 @@ figcaption {
   text-align: center;
   font-style: italic;
   color: black;
+  padding: 5px;
 }
 
 blockquote {
@@ -88,4 +89,32 @@ blockquote {
 .quoteauthor {
   padding-left: 70%;
   font-style: italic;
+}
+
+
+/*Reference: W3schools. (2019). HTML article Tag. W3schools.com. https://www.w3schools.com/TAGS/tag_article.asp */
+
+.all-articles {
+  margin: 0;
+  padding: 20px;
+  background-color: #AFEEEE;
+}
+
+.all-articles h2, .article {
+  margin: 20px;
+  padding: 5px;
+}
+
+.article {
+  background: #E0FFFF;
+}
+
+.article h3, p {
+  margin: 15px;
+}
+
+.article img {
+  display: block;
+  max-width: 45%;
+  height: auto;
 }
