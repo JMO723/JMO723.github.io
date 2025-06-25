@@ -121,8 +121,8 @@ blockquote {
 
 .center-img-b {
   display: block;
-  max-width: 75%;
-  max-height: 700px;
+  max-width: 50%;
+  max-height: 100%;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -133,6 +133,7 @@ blockquote {
   margin: 0;
   padding: 20px;
   background-color: #E0FFE0;
+  border: 1px solid black;
 }
 
 .all-articles-b h2, .article {
@@ -142,6 +143,7 @@ blockquote {
 
 .article-b {
   background: #B3FFb3;
+  border: 1px solid black;
 }
 
 .article-b h3, p {
@@ -150,6 +152,6 @@ blockquote {
 }
 
 hr {
-  margin: 5%;
+  margin: 3%;
   visibility: hidden;
 }
