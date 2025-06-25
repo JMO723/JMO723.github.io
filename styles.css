@@ -119,10 +119,5 @@ blockquote {
   height: auto;
 }
 
-.center-img-left {
-  display: block;
-  max-width: 90%;
-  height: auto;
-  margin-left: 10%;
-  margin-right: auto;
-}
+
+
