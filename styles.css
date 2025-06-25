@@ -118,3 +118,11 @@ blockquote {
   max-width: 45%;
   height: auto;
 }
+
+.center-img-left {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: 20%;
+  margin-right: auto;
+}
