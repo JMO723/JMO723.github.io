@@ -1,23 +1,30 @@
+
+/*Sets the font family and background color for content placed in the body of the text */
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: aliceblue;
 }
+
+/*Navbar class that sets background color */
 .navbar {
   background-color: #222;
   padding: 0em
 }
 
+/*Navbar style to unordered lists that uses flexbox to center content*/
 .navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*Makes list items display inline with the navbar w/ a slight margin */
 .navbar li {
   display: inline-block;
   margin: 1em;
 }
 
+/*Styles content contained in the navbar */
 .navbar a {
   text-decoration: none;
   color: aliceblue;
@@ -27,22 +34,25 @@ body {
   border-radius: 20px; 
 }
 
+/*Keeps the navbar color then same after visiting a link*/
 .navbar a:visited {
   color:aliceblue
 }
 
+/*Changes hover behavior when hovering over elements in the navbar*/
 .navbar a:hover {
   background-color: #4caf50;
   color:#222;
 }
 
+/*Makes heading 1 text align center*/
 h1 {
   text-align: center;
 }
 
-/* Reference: Shraddha. (2022, October 18). How to Place HTML Div Side by Side. Delft Stack. https://www.delftstack.com/howto/html/html-divs-side-by-side/ */
 
-
+/*Reference: Shraddha. (2022, October 18). How to Place HTML Div Side by Side. Delft Stack. https://www.delftstack.com/howto/html/html-divs-side-by-side/ */
+/*Flexbox container: includes margins, padding, and a width limit*/
 .flex-parent {
   display: flex;
   padding: 10px;
@@ -51,6 +61,7 @@ h1 {
   margin: 0 auto;
 }
 
+/*Each child container will be proportionate to one another*/
 .flex-child {
   flex: 1;
   padding: 10px;
@@ -58,14 +69,18 @@ h1 {
   box-sizing: border-box;
 }
 
+/*Class that centers text*/
 .center-text {
    text-align: center;
 }
 
+/*Changes the size of paragraph text used with the center-text class*/
 .center-text p {
   font-size: 1.3em;
   line-height: 1;;
 }
+
+/*Image class that centers images and provides a responsive design; images will scale with container*/
 .center-img {
   display: block;
   max-width: 100%;
@@ -76,6 +91,7 @@ h1 {
   
 }
 
+/*Styles the figcaption: aligns text, changes font style, adds padding*/
 figcaption {
   text-align: center;
   font-style: italic;
@@ -83,6 +99,7 @@ figcaption {
   padding: 5px;
 }
 
+/*Styles the blockquote element*/
 blockquote {
   font-style: italic;
   font-size: 1.5em;
@@ -90,6 +107,7 @@ blockquote {
   text-align: center;
 }
 
+/*Caption class that displays caption to the right of content*/
 .quoteauthor {
   padding-left: 70%;
   font-style: italic;
@@ -98,31 +116,37 @@ blockquote {
 
 /*Reference: W3schools. (2019). HTML article Tag. W3schools.com. https://www.w3schools.com/TAGS/tag_article.asp */
 
+/*Creates an article container with padding*/
 .all-articles {
   margin: 0;
   padding: 20px;
   background-color: #B3FFb3;
 }
 
+/*Heading 2 and the article class will have margins and padding*/
 .all-articles h2, .article {
   margin: 20px;
   padding: 5px;
 }
 
+/*Applies a background to the article class*/
 .article {
   background:  #E0FFE0;
 }
 
+/*Adds a margin for heading 3 and paragraph text in the article class*/
 .article h3, p {
   margin: 15px;
 }
 
+/*Images in the article class will display responsively with content*/
 .article img {
   display: block;
   max-width: 45%;
   height: auto;
 }
 
+/*Alternate center img class*/
 .center-img-b {
   display: block;
   max-width: 50%;
@@ -133,6 +157,7 @@ blockquote {
   
 }
 
+/*An alternate style to the all-articles class*/
 .all-articles-b {
   margin: 0;
   padding: 20px;
@@ -140,59 +165,73 @@ blockquote {
   border: 1px solid black;
 }
 
+/*An alternate style to the all-articles class*/
 .all-articles-b h2, .article {
   margin: 20px;
   padding: 5px;
 }
 
+/*An alternate style to the articles class*/
 .article-b {
   background: #B3FFb3;
   border: 1px solid black;
 }
 
+
+/*An alternate style to the articles class*/
 .article-b h3, p {
   margin: 15px;
   padding: 1%
 }
 
+/*Adds styling to the horizontal break element: applies a margin and makes line invisible*/
 hr {
   margin: 3%;
   visibility: hidden;
 }
 
+/*Alternate style to hr class, mostly used for testing spacing*/
 .hr-alt {
   margin:1%
 }
 
+/*styles the table element to take up the width of the page*/
 table {
   width: 100%;
 }
 
+/*Applies a border to the table, table headings, and table data*/
 table, th, td {  
   border: 1px solid black;
 }
 
+/*Changes the background color of table rows*/
 tr:nth-child(even) {
   background-color: #B3FFb3;
 }
 
+/*Changes the background color of table rows*/
 tr:nth-child(odd) {
   background-color: #E0FFE0;
 }
 
+/*Arrow class that centers and aligns a unicode arrow charecter*/
 .arrow-d {
   display:block;
   text-align:center;
 }
 
+/*Aternate style to list class*/
 .li-alt {
   padding: 2%
 }
 
+/*Changes the color of visited links*/
 a:visited {
   color: darkgreen;
 }
 
+/*Changes the color of hovering over a link*/
 a:hover {
   color:aqua;
 }
