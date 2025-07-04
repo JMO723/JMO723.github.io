@@ -12,7 +12,7 @@
 
 <!--Header Section-->
     <header>
-        <h1>Quiz</h1>
+        <img src="images/quiz.png" class="center-header">
     </header>
 
     <!--Navbar Section-->
@@ -30,32 +30,55 @@
     <main>
 
         <form id="browserQuiz">
-         <p class="center-text"> Q1. Who Was The "Father of Web Browsers?"</p>
 
-            <input type="radio" name="q1" value="a"> Sir Tim Berners-Lee<br>
-            <input type="radio" name="q1" value="b"> Internet Explorer<br>
-            <input type="radio" name="q1" value="c"> Marc Andreessen <br>
-            <input type="radio" name="q1" value="d"> Eric Bina<br>
+            <div class="question color1">
 
-         <p class="center-text">Q2. What two Browsers were competing against each other during the "Browser Wars"??"</p>
+                <p class="center-text"> Q1. Who Was The "Father of Web Browsers?"</p>
 
-            <input type="radio" name="q2" value="a"> Chrome;Opera<br>
-            <input type="radio" name="q2" value="b"> Edge;Netscape Navigator<br>
-            <input type="radio" name="q2" value="c"> Internet Explorer;Netscape Navigator <br>
-            <input type="radio" name="q2" value="d"> Internet Explorer;Chrome<br>
+                <label><input type="radio" name="q1" value="a"> Sir Tim Berners-Lee</label><br>
+                <label><input type="radio" name="q1" value="b"> Internet Explorer</label><br>
+                <label><input type="radio" name="q1" value="c"> Marc Andreessen</label><br>
+                <label><input type="radio" name="q1" value="d"> Eric Bina</label><br>
+        
+            </div>
 
-         <p class="center-text">Q3. As of 2025, What Browser has the largest market share?"</p>
+            <div class="question color3">
 
-            <input type="radio" name="q3" value="a"> Microsoft Edge<br>
-            <input type="radio" name="q3" value="b"> Opera GX<br>
-            <input type="radio" name="q3" value="c"> Firefox<br>
-            <input type="radio" name="q3" value="d"> Google Chrome<br>
+                <p class="center-text">Q2. Select the two Browsers that were competing against each other during the "Browser Wars"?</p>
 
-         <p class="center-text">Q4. Fill in the blank: The ______ Project was formed of former Netscape Navigator employees that wanted to create more choice in the browser market.</p>
-            <input type="text" name="q4"><br>
+                <label><input type="checkbox" name="q2" value="a"> Google Chrome</label><br>
+                <label><input type="checkbox" name="q2" value="b"> Netscape Navigator</label><br>
+                <label><input type="checkbox" name="q2" value="c"> Internet Explorer </label><br>
+                <label><input type="checkbox" name="q2" value="d"> Mozilla Firefox</label><br>
 
-         <p class="center-text">Q5. Fill in the blank: The first iteration of the Internet was created for governments and universities to communicate new research findings. It was known as _______Net.</p>
-            <input type="text" name="q5"><br>
+            </div>
+
+            <div class="question color2">
+
+                <p class="center-text">Q3. As of 2025, What Browser has the largest market share?</p>
+
+                <label><input type="radio" name="q3" value="a"> Microsoft Edge</label><br>
+                <label><input type="radio" name="q3" value="b"> Opera GX</label><br>
+                <label><input type="radio" name="q3" value="c"> Firefox</label><br>
+                <label><input type="radio" name="q3" value="d"> Google Chrome</label><br>
+
+            </div>
+
+            <div class="question color3">
+
+                <p class="center-text">Q4. Fill in the blank: The ______ Project was formed of former Netscape Navigator employees that wanted to create more choice in the browser market.</p>
+                <input type="text" name="q4"><br>
+            
+            </div>
+
+            <div class="question color1">
+
+                <p class="center-text">Q5. Fill in the blank: The first iteration of the Internet was created for governments and universities to communicate new research findings. It was known as _______Net.</p>
+                <input type="text" name="q5"><br>
+
+            </div>
+
+         <div id="result" class="center-text"></div>
 
          <button type="button" onclick="gradedQuiz()">Grade Quiz</button>
 
@@ -63,10 +86,11 @@
 
         </form>
 
-        <div id="result" class="center-text"></div>
+        
 
     </main>
 
     <script src="quiz.js"></script>
 
 </body>
+</html>

@@ -4,7 +4,12 @@ function gradedQuiz() {
 
     if (form.q1.value === 'a') score++;
 
-    if (form.q2.value === 'c') score++;
+    const q2 = Array.from(form.querySelectorAll('input[name="q2"]:checked')).map(cb => cb.value);
+    if (
+        q2.length == 2 && 
+        q2.includes('b') &&
+        q2.includes('c')
+    ) score++;
 
     if (form.q3.value === 'd') score++;
 
