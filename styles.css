@@ -298,6 +298,10 @@ a:hover {
   cursor: pointer
 }
 
+#browserQuiz label:hover {
+  background-color: aliceblue;
+}
+
 /*Styles input text in browserQuiz*/
 #browserQuiz input[type="text"] {
   display:block;

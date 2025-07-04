@@ -22,10 +22,22 @@ function gradedQuiz() {
     if (q4 === 'mozilla' || q4 === 'Mozilla') score++; //If answer is mozilla or Mozilla + 1 to score
 
     const q5 = form.q5.value;
-    if (q5 === 'Arpa' || q5 === 'arpa') score++;
+    if (q5 === 'Arpa' || q5 === 'arpa' || q5 ==='ARPA') score++;
 
-    document.getElementById('result').textContent = 'Grade: ' + score + '/5' //Displays final score
+    if (form.q6.value === 'b') score++;
 
+    document.getElementById('result').textContent = 'Grade: ' + score + '/6' //Displays final score
+
+    //Displays correct answers
+    document.getElementById('answers').innerHTML = `
+    <b>Answer Key:</b><br>
+    <b>Q1.</b> Sir Tim Berners-Lee<br>
+    <b>Q2.</b> Netscape Navigator ; Internet Explorer<br> 
+    <b>Q3.</b> Google Chrome<br>
+    <b>Q4.</b> Mozilla<br>
+    <b>Q5.</b> ARPA<br>
+    <b>Q6.</b> NCSA Mosaic
+    `;
 }
 
 
