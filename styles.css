@@ -106,7 +106,6 @@ blockquote {
   margin: 1em 0;
   text-align: center;
   display: block;
-  padding-top: 5%;
 }
 
 /*Caption class that displays caption to the right of content*/
@@ -114,6 +113,10 @@ blockquote {
   padding-left: 70%;
   
   font-style: italic;
+}
+
+caption {
+  font-weight: bold;
 }
 
 
