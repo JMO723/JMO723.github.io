@@ -46,4 +46,5 @@ function gradedQuiz() {
 function quizRestart() {
     document.getElementById('browserQuiz').reset();
     document.getElementById('result').textContent = ''; //Resets the quiz selections and final score display
+    document.getElementById('answers').innerHTML = ''; //Removes Answer Key
 }
