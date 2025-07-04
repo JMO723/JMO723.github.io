@@ -246,6 +246,7 @@ a:hover {
   color:aqua;
 }
 
+/*Creates a rounded container for quiz questions */
 .question {
   border: 2px solid black;
   border-radius: 10px;
@@ -253,6 +254,7 @@ a:hover {
   margin: 20px auto;
 }
 
+/*Classes that have different background colors*/
 .color1 {
   background: #9aff9a;
 }
@@ -265,6 +267,7 @@ a:hover {
   background:#E0FFE0; 
 }
 
+/* Styles the browser form element*/
 #browserQuiz {
 
   
@@ -276,6 +279,7 @@ a:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/*Styles paragraph text in browserQuiz*/
 #browserQuiz p {
 
   font-weight: bold;
@@ -285,6 +289,7 @@ a:hover {
 
 }
 
+/*Styles labels in browserQuiz*/
 #browserQuiz label {
   display: block;
   color: black;
@@ -293,6 +298,7 @@ a:hover {
   cursor: pointer
 }
 
+/*Styles input text in browserQuiz*/
 #browserQuiz input[type="text"] {
   display:block;
   margin: 10px auto;
@@ -301,20 +307,23 @@ a:hover {
 
 }
 
+/*Styles radio buttons in browserQuiz*/
 #browserQuiz input[type="radio"] {
   margin-left: 2%;
 }
 
+/*Styles checkboxe buttons in browserQuiz*/
 #browserQuiz input[type="checkbox"] {
   margin-left: 2%;
 }
 
+/*Styles buttons in browserQuiz*/
 #browserQuiz button {
   display: flex;
   justify-content: center;
   background: #B3FFb3;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 4px;
   padding: 10px auto;
   font-size: 1.2em;
@@ -322,10 +331,12 @@ a:hover {
   cursor: pointer;
 }
 
+/*Adds hover effect to buttons*/
 #browserQuiz button:hover {
   background: #E0FFE0;
 }
 
+/*Styles result display*/
 #result {
   font-size: 2em;
   color: black;
@@ -333,6 +344,7 @@ a:hover {
   font-weight: bold;;
 }
 
+/*Styles images set as header elements*/
 .center-header {
   display: block;
   margin: 0 auto;
@@ -341,6 +353,7 @@ a:hover {
   max-width: 100%
 }
 
+/*Styles the footer */
 footer {
   background-color: #222;
   color: aliceblue;
