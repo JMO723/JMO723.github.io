@@ -31,8 +31,10 @@ body {
   color: aliceblue;
   font-weight: bold;
   font-size: 1.2em;
-  padding: .7em;
-  border-radius: 20px; 
+  padding: 0.4em 0.8em;
+  border-radius: 8px; 
+  display: inline;
+  white-space: nowrap;
 }
 
 /*Keeps the navbar color then same after visiting a link*/
