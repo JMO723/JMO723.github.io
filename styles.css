@@ -2,8 +2,8 @@
 /*Sets the font family and background color for content placed in the body of the text */
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #f6fff6;
-  color: #1b5e20
+  background-color: #f7fafd;
+  color: #2c3e50
 }
 
 /*Navbar class that sets background color */
@@ -28,7 +28,7 @@ body {
 /*Styles content contained in the navbar */
 .navbar a {
   text-decoration: none;
-  color: aliceblue;
+  color: #f6fff6;
   font-weight: bold;
   font-size: 1.2em;
   padding: 0.4em 0.8em;
@@ -39,12 +39,12 @@ body {
 
 /*Keeps the navbar color then same after visiting a link*/
 .navbar a:visited {
-  color:aliceblue
+  color:#f6fff6
 }
 
 /*Changes hover behavior when hovering over elements in the navbar*/
 .navbar a:hover {
-  background-color: #4caf50;
+  background-color: #d4f5d0;
   color:#222;
 }
 
@@ -67,13 +67,13 @@ h1 {
 
 /*Each child container will be proportionate to one another*/
 .flex-child {
-  background-color:#eafbe7;
+  background-color:#e6f0f5;
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 2em;
-  border: 1px solid #b3e6c9;
+  border: 1px solid #bfd5e1;
   border-radius: 6px;
   box-sizing: border-box;
   box-shadow: 0 1px 3px rgba (0,0,0,0.05);
@@ -120,7 +120,7 @@ blockquote {
 }
 
 .quoteauthor-container {
-  background-color: #d4f5d0;
+  background-color: #d4e4ec;
   padding: 1.5em 2em;
   border-radius: 10px;
   max-width: 700px;
