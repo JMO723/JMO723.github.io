@@ -106,7 +106,7 @@ h1 {
 figcaption {
   text-align: center;
   font-style: italic;
-  color: black;
+  color: #2c3e50;
   padding: 5px;
 }
 
@@ -123,7 +123,7 @@ blockquote {
   background-color: #d4e4ec;
   padding: 1.5em 2em;
   border-radius: 10px;
-  max-width: 700px;
+  max-width: 900px;
   margin: 2em auto;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1)
 }
@@ -147,7 +147,6 @@ caption {
 .all-articles {
   margin: 0;
   padding: 20px;
-  background-color: #B3FFb3;
 }
 
 /*Heading 2 and the article class will have margins and padding*/
@@ -158,9 +157,10 @@ caption {
 
 /*Applies a background to the article class*/
 .article {
-  background:  #E0FFE0;
-  border: 2px solid green;
+  background:  #e6f0f5;
+  border: 2px solid #bfd5e1;
   border-radius: 10px;
+  box-shadow: 0 1px 3px rgba (0,0,0,0.05);
 }
 
 /*Adds a margin for heading 3 and paragraph text in the article class*/
@@ -289,6 +289,10 @@ a:hover {
   background:#E0FFE0; 
 }
 
+.colora {
+  background: #d4e4ec;
+}
+
 /* Styles the browser form element*/
 #browserQuiz {
 
@@ -378,6 +382,14 @@ a:hover {
   width: auto;
   max-width: 100%
 }
+
+.center-subheader {
+  height: 2.5em;
+  margin: 0 auto;
+  padding-left: 20px;
+  max-width: 90%;
+}
+
 
 /*Styles the footer */
 footer {
