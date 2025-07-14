@@ -44,7 +44,7 @@ body {
 
 /*Changes hover behavior when hovering over elements in the navbar*/
 .navbar a:hover {
-  background-color: #d4f5d0;
+  background-color: #d4e4ec;
   color:#222;
 }
 
@@ -72,7 +72,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 2em;
+  padding: 1.2em;
   border: 1px solid #bfd5e1;
   border-radius: 6px;
   box-sizing: border-box;
@@ -181,9 +181,10 @@ caption {
 /*Applies a background to the article class*/
 .article {
   background:  #e6f0f5;
-  border: 2px solid #bfd5e1;
+  border: 1.5px solid #bfd5e1;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba (0,0,0,0.05);
+  box-shadow: 0 4px 16px rgba (44,62,80,0.08);
+  padding: 1.5em 2em;
 }
 
 /*Adds a margin for heading 3 and paragraph text in the article class*/
@@ -197,6 +198,12 @@ caption {
   display: block;
   max-width: 45%;
   height: auto;
+}
+
+.article:hover {
+  box-shadow: 0 8px 24px rgba(44,62,80,0.15);
+  background-color: #d4e4ec;
+  transition: box-shadow .2s, background .2s;
 }
 
 /*Alternate center img class*/
@@ -214,7 +221,7 @@ caption {
 .all-articles-b {
   max-width: 900px;
   margin: 30px auto;
-  padding: 25px;
+  padding: 1.5em;
   background-color: #d4e4ec; 
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,128,0,0.05);
@@ -253,22 +260,40 @@ hr {
 
 /*styles the table element to take up the width of the page*/
 table {
+  max-width: 700px;
   width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table tr:hover {
+  background-color: #bfd5e1;
+  transition: background 0.2s;
 }
 
 /*Applies a border to the table, table headings, and table data*/
 table, th, td {  
-  border: 1px solid black;
+  border: 1px solid #bfd5e1;
+}
+
+th,td {
+  padding: .8em 1.2em;
+}
+
+th {
+  background-color: #bfd5e1;
+  font-weight: bold;
+  color: #2c3e50;
 }
 
 /*Changes the background color of table rows*/
 tr:nth-child(even) {
-  background-color: #B3FFb3;
+  background-color: #d4e4ec;
 }
 
 /*Changes the background color of table rows*/
 tr:nth-child(odd) {
-  background-color: #E0FFE0;
+  background-color: #e6f0f5;
 }
 
 /*Arrow class that centers and aligns a unicode arrow charecter*/
