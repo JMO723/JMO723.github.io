@@ -173,8 +173,7 @@ caption {
 
 /*Heading 2 and the article class will have margins and padding*/
 .all-articles h2, .article {
-  max-width: 1000px;
-  margin: 20px;
+  margin: 30px auto;
   padding: 5px;
 }
 
