@@ -172,6 +172,11 @@ caption {
   padding: 20px;
 }
 
+.all-articles a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
 /*Heading 2 and the article class will have margins and padding*/
 .all-articles h2, .article {
   margin: 30px auto;
