@@ -167,7 +167,8 @@ caption {
 
 /*Creates an article container with padding*/
 .all-articles {
-  margin: 0;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -179,6 +180,8 @@ caption {
 
 /*Applies a background to the article class*/
 .article {
+  max-width: 900px;
+  margin: 30px auto;
   background:  #e6f0f5;
   border: 1.5px solid #bfd5e1;
   border-radius: 10px;
@@ -318,27 +321,30 @@ a:hover {
 
 /*Creates a rounded container for quiz questions */
 .question {
-  border: 2px solid black;
-  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44,62,80,.08);
+  border: 1.5px solid #bfd5e1;
+  border-radius: 12px;
   padding: 20px auto;
   margin: 20px auto;
+  margin-bottom: 2em;
+  transition: box-shadow .2s, border .2s;
 }
 
 /*Classes that have different background colors*/
 .color1 {
-  background: #9aff9a;
+  background: #e6f0f5;
 }
 
 .color2 {
-  background:#B3FFb3; 
+  background:#d4e4ec; 
 }
 
 .color3 {
-  background:#E0FFE0; 
+  background:#bfd5e1; 
 }
 
 .colora {
-  background: #d4e4ec;
+  background: #f7fafd;
 }
 
 /* Styles the browser form element*/
