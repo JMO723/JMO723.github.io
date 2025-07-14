@@ -185,7 +185,7 @@ caption {
   background:  #e6f0f5;
   border: 1.5px solid #bfd5e1;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba (44,62,80,0.08);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.08);
   padding: 1.5em 2em;
 }
 
@@ -193,6 +193,13 @@ caption {
 .article h3, p {
   margin: 15px;
   line-height: 1.3em;
+}
+
+.article ol {
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: left;
+  display: table;
 }
 
 /*Images in the article class will display responsively with content*/
@@ -392,7 +399,6 @@ a:hover {
   display: flex;
   align-items: center;
   color: black;
-  font-size: 1.1em;
   margin: 10px auto;
   cursor: pointer;
   gap: 0.5em;
