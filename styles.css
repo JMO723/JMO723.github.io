@@ -515,3 +515,96 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
 
 }
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .all-articles, .article, #browserQuiz {
+    max-width: 900px;
+    padding: 2em;
+  }
+
+  .flex-parent {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+
+  .all-articles, .article, #browserQuiz {
+    max-width: 700px;
+    padding: 1.5em;
+  }
+
+  .flex-parent {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .navbar ul {
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: .95em;
+  }
+
+ .all-articles, .article, #browserQuiz {
+    max-width: 98vw;
+    padding: 1em;
+    margin: .5em auto;
+  }
+
+  .flex-parent {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin: .5em 0;
+    text-align: center;
+  }
+
+  img, iframe, table {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+  }
+
+  table, th, td {
+    font-size: .95em;
+    word-break: break-word;
+  }
+
+  #browserQuiz button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .center-header {
+    max-width: 40vw;
+    height: auto;
+  }
+
+  .center-subheader {
+    max-width: 30vw;
+    height: auto;
+  }
+
+}
