@@ -603,12 +603,12 @@ footer {
   }
 
   .center-header {
-    max-width: 40vw;
+    max-width: 60vw;
     height: auto;
   }
 
   .center-subheader {
-    max-width: 30vw;
+    max-width: 45vw;
     height: auto;
   }
 
