@@ -327,7 +327,22 @@ a:hover {
   padding: 20px auto;
   margin: 20px auto;
   margin-bottom: 2em;
-  transition: box-shadow .2s, border .2s;
+  transition: box-shadow .2s, background .2s;
+}
+
+.question p {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.5px;
+  text-align: center; 
+  background: transparent;
+}
+
+.question:hover {
+  box-shadow: 0 6px 24px rgba(44,62,80,.15);
+  background: #e6f0f5;
 }
 
 /*Classes that have different background colors*/
@@ -349,21 +364,22 @@ a:hover {
 
 /* Styles the browser form element*/
 #browserQuiz {
-
-  
-  color: black;
-  padding: 20px;
+  background: #e6f0f5;
+  max-width: 700px;
+  color: #2c3e50;
+  padding: 2em;
   font-size: 1.2em;
-  margin: 10px auto;
+  margin: 2em auto;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
 }
 
 /*Styles paragraph text in browserQuiz*/
 #browserQuiz p {
 
   font-weight: bold;
-  color: black;
+  color: #2c3e50;
   margin-top: 20;
   margin-bottom: 10;
 
@@ -371,15 +387,21 @@ a:hover {
 
 /*Styles labels in browserQuiz*/
 #browserQuiz label {
-  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  display: flex;
+  align-items: center;
   color: black;
   font-size: 1.1em;
   margin: 10px auto;
-  cursor: pointer
+  cursor: pointer;
+  gap: 0.5em;
+  padding: 0.5em;
 }
 
 #browserQuiz label:hover {
-  background-color: aliceblue;
+  background-color: #e6f0f5;
+  border-radius: 6px;
 }
 
 /*Styles input text in browserQuiz*/
@@ -393,39 +415,55 @@ a:hover {
 
 /*Styles radio buttons in browserQuiz*/
 #browserQuiz input[type="radio"] {
-  margin-left: 2%;
+  margin-left: 0;
+  transform: scale(1.3);
+  margin-right: .7em;
+  accent-color: #bfd5e1;
+  cursor: pointer;
+
 }
 
 /*Styles checkboxe buttons in browserQuiz*/
 #browserQuiz input[type="checkbox"] {
-  margin-left: 2%;
+  margin-left: 0;
+  transform: scale(1.3);
+  margin-right: .7em;
+  accent-color: #bfd5e1;
+  cursor: pointer;
 }
 
 /*Styles buttons in browserQuiz*/
 #browserQuiz button {
   display: flex;
   justify-content: center;
-  background: #B3FFb3;
-  color: black;
-  border: 2px solid black;
-  border-radius: 4px;
-  padding: 10px auto;
-  font-size: 1.2em;
-  margin: 10px auto;
+  background: #d4e4ec;
+  color: #2c3e50;
+  border: none;
+  border-radius: 8px;
+  padding: .8em 2em;
+  font-size: 1.1em;
+  margin: 1em auto;
+  box-shadow: 0 2px 6px rgba(44,62,80,.08);
+  transition: background .2s, box-shadow .2s;
   cursor: pointer;
 }
 
 /*Adds hover effect to buttons*/
 #browserQuiz button:hover {
-  background: #E0FFE0;
+  background: #bfd5e1;
+  box-shadow: 0 4px 12px rgba(44,62,80,.15);
 }
 
 /*Styles result display*/
 #result {
   font-size: 2em;
-  color: black;
-  margin: 20px auto;
-  font-weight: bold;;
+  color: #2c3e50;
+  margin: 1.5em auto;
+  font-weight: bold;
+  background: #d4e4ec;
+  border-radius: 8px;
+  padding: .5em 1em;
+  box-shadow: 0 2px 8px rgba(44,62,80,.08);
 }
 
 /*Styles images set as header elements*/
