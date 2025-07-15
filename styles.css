@@ -9,7 +9,8 @@ body {
 /*Navbar class that sets background color */
 .navbar {
   background-color: #222;
-  padding: 0em
+  padding: 0em;
+  z-index: 2; /*Navbar will display ontop of the floating squares */
 }
 
 /*Navbar style to unordered lists that uses flexbox to center content*/
@@ -34,7 +35,7 @@ body {
   padding: 0.4em 0.8em;
   border-radius: 8px; 
   display: inline;
-  white-space: nowrap;
+  white-space: nowrap; /*Stops text wrapping in the navbar*/
 }
 
 /*Keeps the navbar color then same after visiting a link*/
@@ -79,13 +80,14 @@ h1 {
   box-shadow: 0 1px 3px rgba (0,0,0,0.05);
 }
 
+/*Aligns flexbox content*/
 .align {
   justify-content: center;
   align-items: center;
 }
 
 
-
+/*Styles images in the flex-child class*/
 .flex-child img {
   display: block;
   width: 100%;
@@ -141,6 +143,7 @@ blockquote {
   display: block;
 }
 
+/*Creates a container for quotes*/
 .quoteauthor-container {
   background-color: #d4e4ec;
   padding: 1.5em 2em;
@@ -172,7 +175,7 @@ caption {
   padding: 20px;
 }
 
-.all-articles a {
+.all-articles a {          /*reference links will wrap and break lines to fit the container */
   word-break: break-all;
   overflow-wrap: anywhere;
 }
@@ -217,7 +220,7 @@ caption {
 .article:hover {
   box-shadow: 0 8px 24px rgba(44,62,80,0.15);
   background-color: #d4e4ec;
-  transition: box-shadow .2s, background .2s;
+  transition: box-shadow .2s, background .2s; /*hover effect for articles*/
 }
 
 /*Alternate center img class*/
@@ -282,7 +285,7 @@ table {
 
 table tr:hover {
   background-color: #bfd5e1;
-  transition: background 0.2s;
+  transition: background 0.2s; /* hover effect for tables*/
 }
 
 /*Applies a border to the table, table headings, and table data*/
@@ -339,9 +342,10 @@ a:hover {
   padding: 20px auto;
   margin: 20px auto;
   margin-bottom: 2em;
-  transition: box-shadow .2s, background .2s;
+  transition: box-shadow .2s, background .2s; /*adds a transition for hover effects*/
 }
 
+/*Styles question text*/
 .question p {
   font-size: 1.25em;
   font-weight: 600;
@@ -486,7 +490,7 @@ a:hover {
   max-width: 100%
 }
 
-.center-subheader {
+.center-subheader {   /*for smaller image headers*/
   height: 2.5em;
   margin: 0 auto;
   padding-left: 20px;
@@ -502,6 +506,7 @@ footer {
   bottom: 0;
 }
 
+/*creates a container for videos (Youtube)*/
 .video-container {
   display: flex;
   justify-content: center;
@@ -510,10 +515,11 @@ footer {
   background: transparent
 }
 
+/*Styles the videos frame*/
 .video-container iframe {
   width: 100%;
   max-width: 800px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9; /*forces a 16:9 aspect ratio*/
   border: none;
   display: block;
   border-radius: 12px;
@@ -521,6 +527,142 @@ footer {
 
 }
 
+
+/*Styles the container for the floating squares */
+/*Reference: https://www.youtube.com/watch?v=f5DFGbs8DbE */
+.float-square {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/*Styles the squares to start at the bottom of the container and behind main content */
+.squares {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+  bottom: -150px;     /*allows squares to be invisible while they populate*/
+  z-index: 1;
+}
+
+/*Sets the animations for each square */
+.squares li {
+  list-style: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(44,62,80,0.12);
+  animation: squareUp 25s linear infinite; /*animation lasts 25 seconds, is linear, and goes on forever */
+  opacity: 0;
+
+}
+
+/*each n-th child class starts at a different size, position, and time */
+.squares li:nth-child(1) {
+  left: 5%;
+  bottom: 0;
+  width: 90px;
+  height: 90px;
+  animation-delay: 0s;
+}
+
+.squares li:nth-child(2) {
+  left: 18%;
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  animation-delay: 1.3s;
+}
+
+.squares li:nth-child(3) {
+  left: 32%;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  animation-delay: 3.7s;
+}
+
+.squares li:nth-child(4) {
+  left: 47%;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  animation-delay: 2.2s;
+}
+
+.squares li:nth-child(5) {
+  left: 60%;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  animation-delay: 5.1s;
+}
+
+.squares li:nth-child(6) {
+  left: 73%;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation-delay: 7.8s;
+}
+
+.squares li:nth-child(7) {
+  left: 85%;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4.4s;
+}
+
+.squares li:nth-child(8) {
+  left: 12%;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  animation-delay: 9.6s;
+}
+
+.squares li:nth-child(9) {
+  left: 55%;
+  bottom: 0;
+  width: 28px;
+  height: 28px;
+  animation-delay: 6.5s;
+}
+
+.squares li:nth-child(10) {
+  left: 80%;
+  bottom: 0;
+  width: 44px;
+  height: 44px;
+  animation-delay: 11.2s;
+}
+
+/*Describes the actual animation of the squares (each square will rise vertically and spin, eventually turning into a circle)*/
+@keyframes squareUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    border-radius: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg); /* moves the square up and rotates it */
+    opacity: 0;
+    border-radius: 100%;
+  }
+}
+
+/*Media screen for laptops and larger screen sizes */
 @media (min-width: 1200px) {
   body {
     font-size: 1.2em;
@@ -538,9 +680,14 @@ footer {
 
 }
 
+/*media screen for tablets and smaller */
 @media (max-width: 1199px) and (min-width: 768px) {
   body {
     font-size: 1em;
+  }
+
+  .squares li:nth-child(n+9) {   /*decreases the number of displayed squares */
+    display:none;
   }
 
   .all-articles, .article, #browserQuiz {
@@ -559,9 +706,14 @@ footer {
   }
 }
 
+/*media screen for phones and smaller */
 @media (max-width: 767px) {
   body {
     font-size: .95em;
+  }
+
+  .squares li:nth-child(n+7) {
+    display: none;
   }
 
  .all-articles, .article, #browserQuiz {
