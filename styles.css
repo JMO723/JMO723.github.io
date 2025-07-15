@@ -712,6 +712,10 @@ footer {
     font-size: .95em;
   }
 
+  .navbar a {
+    font-size: .8em;
+  }
+
   .squares li:nth-child(n+7) {
     display: none;
   }
