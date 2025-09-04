@@ -399,9 +399,9 @@ ol {
 }
 
 .hero-text h2 {
-	font-size: 170px;
-	line-height: normal;
-	margin-bottom: 20px;
+	font-size: 100px;
+	line-height: 1.1;
+	margin-bottom: 40px;
 }
 
 .hero-text p {
@@ -890,6 +890,9 @@ ol {
 .home-three-style .fact-box.trans,
 .home-four-style .fact-box.trans {
 	margin-bottom: 80px;
+	/* Add extra margin for desktop to prevent overlap */
+	position: relative;
+	z-index: 2;
 }
 
 .home-three-style .social-links,
@@ -1018,6 +1021,10 @@ ol {
 
 .home-five-style .hero-section {
 	padding-top: 70px;
+	/* Add left margin for desktop */
+	margin-left: 40px;
+	position: relative;
+	z-index: 1;
 }
 
 .home-five-style .hero-section img {
