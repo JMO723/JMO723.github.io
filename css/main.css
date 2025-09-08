@@ -1,3 +1,11 @@
+/* Add line spacing for skills list */
+.skills-list > li {
+  margin-bottom: 0.7em;
+}
+.skills-list ul {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
 /* Timeline custom component */
 .timeline-card {
   position: relative;
