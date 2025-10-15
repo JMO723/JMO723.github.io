@@ -68,15 +68,19 @@ AOS.init({
   var overlay = document.getElementById('lightbox');
   var img = document.getElementById('lightboxImage');
   if (!overlay || !img) return;
+  // prevent overlay from blocking clicks when closed
+  overlay.style.pointerEvents = 'none';
   function open(src, alt) {
     img.src = src; img.alt = alt || 'Project image';
     overlay.classList.add('open');
     overlay.setAttribute('aria-hidden', 'false');
+    overlay.style.pointerEvents = 'auto';
   }
   function close() {
     overlay.classList.remove('open');
     overlay.setAttribute('aria-hidden', 'true');
     img.src = '';
+    overlay.style.pointerEvents = 'none';
   }
   overlay.addEventListener('click', function (e) {
     if (e.target === overlay || e.target.classList.contains('modal-close')) close();

@@ -102,6 +102,8 @@ header.d-print-none {
   z-index: 2000; }
 
 .modal-overlay.open { display: flex; }
+.contact-actions { gap: 8px; }
+.contact-actions .btn { margin-left: 8px; }
 
 .modal-content {
   position: relative;
