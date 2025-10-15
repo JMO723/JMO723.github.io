@@ -124,6 +124,32 @@ header.d-print-none {
 .dark .modal-content { background: #222; }
 .dark footer a:not(.nav-link) { border-color: rgba(255,255,255,0.5); }
 
+/* Dark mode: sticky header background and nav/link colors */
+.dark header.d-print-none {
+  background: rgba(18, 18, 18, 0.9);
+}
+.dark .site-title { color: #f2f2f2 !important; }
+.dark header .nav-link { color: #e6e6e6 !important; }
+.dark header .nav-link.active, .dark header .nav-link:hover, .dark header .nav-link:focus {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* Dark mode: form fields and labels for readability */
+.dark .form-control {
+  background-color: #121212 !important;
+  color: #ededed !important;
+  border-color: #444 !important;
+}
+.dark .form-control:focus {
+  background-color: #151515 !important;
+  color: #ffffff !important;
+  border-color: #5ac8fa !important;
+  box-shadow: 0 0 0 0.2rem rgba(90,200,250,0.15) !important;
+}
+.dark .form-label { color: #cfcfcf !important; }
+.dark .form-control::placeholder { color: #a7a7a7 !important; }
+
 /* Small polish */
 .site-title { transition: color 0.2s ease; }
 .timeline-card:hover { transform: translateY(-2px); transition: transform 0.2s ease; }
