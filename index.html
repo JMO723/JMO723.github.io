@@ -15,6 +15,12 @@
     <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
     <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+    <meta name="description" content="Resume and portfolio of Junaid Mohammed, IT student focused on AWS, cloud, and cybersecurity.">
+    <meta property="og:title" content="Junaid Mohammed - Resume & Portfolio">
+    <meta property="og:description" content="Information Technology student with a focus on AWS and cloud technologies. View projects, experience, and contact details.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/headshot.jpg">
+    <meta property="og:url" content="/">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -25,6 +31,7 @@
     </noscript>
   </head>
   <body class="bg-light" id="top">
+    <div id="scroll-progress"><div id="scroll-progress-bar"></div></div>
     <header class="d-print-none">
       <div class="container text-center text-lg-left">
         <div class="pt-4 clearfix">
@@ -46,6 +53,9 @@
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
                 </li>
+                <li class="nav-item d-none d-lg-inline-block">
+                  <button id="themeToggle" class="btn btn-sm btn-outline-secondary ms-3" type="button" aria-label="Toggle dark mode">Dark</button>
+                </li>
               </ul>
             </nav>
           </div>
@@ -57,10 +67,10 @@
 <div class="resume-container">
   <div class="shadow-1-strong bg-white my-5" id="intro">
     <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/header-background.jpg"/>
+      <div class="cover bg-image"><img src="images/header-background.jpg" alt="Abstract header background"/>
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
           <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/headshot.jpg" width="160" height="160"/></div>
+            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/headshot.jpg" width="160" height="160" alt="Portrait of Junaid Mohammed"/></div>
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
                 <h2 class="h1">Junaid Mohammed</h2>
@@ -88,7 +98,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2 class="h2 fw-light mb-4">About Me</h2>
-          <p>Hello, and thank you for taking the time to get to know me! My name is Junaid Mohammed, and I am passionate about expanding my knowledge of cloud technologies and network architecture. I am currently pursuing my B.S. in Information Technology. I have obtained the <strong>Amazon Certified Practicioner</strong> certification and am comfortable working with many AWS services. I am a quick learner and a team player who gets the job done.</p>
+          <p>Hello, and thank you for taking the time to get to know me! My name is Junaid Mohammed, and I am passionate about expanding my knowledge of cloud technologies and network architecture. I am currently pursuing my B.S. in Information Technology. I have obtained the <strong>Amazon Certified Practitioner</strong> certification and am comfortable working with many AWS services. I am a quick learner and a team player who gets the job done.</p>
           <p>I am confident in my ability to optimize your systems to run securely and deliver consistent performance.</p>
         </div>
         <div class="col-md-5 offset-lg-1">
@@ -144,7 +154,7 @@
       <ul class="skills-list">
         <li><strong>People-Oriented:</strong> Collaborated with classmates and faculty to solve technical challenges.
           <ul>
-            <li>Worked with Chattahoochee Tech faculty on implementing new lessons and softwares in the Cyber Security Deparment.</li>
+            <li>Worked with Chattahoochee Tech faculty on implementing new lessons and software in the Cybersecurity Department.</li>
           </ul>
         </li>
         <li><strong>Effective Communicator:</strong> Presented technical concepts and solutions to peers and instructors.
@@ -197,7 +207,7 @@
       <div class="timeline">
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Bachelors of Information Technology <span class="text-muted h6">from Kennesaw State University</span>          </div>
+            <div class="h5">Bachelor’s of Information Technology <span class="text-muted h6">from Kennesaw State University</span>          </div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2024 - Present</div>
@@ -206,7 +216,7 @@
         </div>
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Associates of Cybersecurity <span class="text-muted h6">from Chattahoochee Technical College</span>          </div>
+            <div class="h5">Associate’s of Cybersecurity <span class="text-muted h6">from Chattahoochee Technical College</span>          </div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2022 - 2023</div>
@@ -215,7 +225,7 @@
         </div>
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Amazon Certified Cloud Practicioner <span class="text-muted h6">from Amazon Web Services</span>          </div>
+            <div class="h5">Amazon Certified Cloud Practitioner <span class="text-muted h6">from Amazon Web Services</span>          </div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2023 - Present</div>
@@ -229,7 +239,12 @@
     <div class="portfolio-section">
       <h2 class="h2 fw-light mb-4">Projects</h2>
       <div class="row g-0">
-        <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/aws_workspaces.jpg" width="800" height="500"/></a></div>
+        <div class="col-md-6 position-relative">
+          <a href="https://docs.google.com/document/d/1KdF9GraLpbChQQmm9MRxBhfjaL3nnhqM1el60V_r8IA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <img class="img-fluid project-image" src="images/aws_workspaces.jpg" width="800" height="500" alt="Screenshot of AWS Workspaces project" loading="lazy" decoding="async"/>
+          </a>
+          <button class="btn btn-sm btn-light project-lightbox" data-image="images/aws_workspaces.jpg" aria-label="View larger image">View</button>
+        </div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
             <p class="text-teal text-small">AWS / Virtualization / Security </p>
@@ -246,7 +261,12 @@
             <p class="text-muted">Provisioned an S3 bucket and configured IAM roles to allow EC2 instances to access and write to the bucket securely.</p>
           </div>
         </div>
-        <div class="col-md-6"><a href="https://www.behance.net/" target="_blank"><img class="img-fluid" src="images/post_ai_s3.png" width="800" height="500"/></a></div>
+        <div class="col-md-6 position-relative">
+          <a href="https://docs.google.com/document/d/1K3ujrB6-GpwdTnFe5YP28y6vvpTPHYbS3j-KTobY9tU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <img class="img-fluid project-image" src="images/post_ai_s3.png" width="800" height="500" alt="Diagram of EC2 to S3 access using IAM roles" loading="lazy" decoding="async"/>
+          </a>
+          <button class="btn btn-sm btn-light project-lightbox" data-image="images/post_ai_s3.png" aria-label="View larger image">View</button>
+        </div>
       </div>
     </div>
   </div>
@@ -256,7 +276,7 @@
       <div class="row"> 
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/reference-t.jpg" width="60" height="60"/></div>
+            <div class="avatar"><img src="images/reference-t.jpg" width="60" height="60" alt="Reference photo of Tony Evans" loading="lazy" decoding="async"/></div>
             <div class="header-bio m-3 mb-0">
               <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Tony Evans</h3>
               <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Information Security Analyst / Chattahoochee Technical College</p>
@@ -275,28 +295,34 @@
       <div class="row mb-4">
         <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
           <div class="mt-1">
-            <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> +1 (404) 644-7985</div>
-            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>junaidmohammed723@gmail.com</div>
+            <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> <a href="tel:+14046447985" id="phoneLink">+1 (404) 644-7985</a> <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" data-copy="+14046447985" aria-label="Copy phone">Copy</button></div>
+            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i><a href="mailto:junaidmohammed723@gmail.com" id="emailLink">junaidmohammed723@gmail.com</a> <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" data-copy="junaidmohammed723@gmail.com" aria-label="Copy email">Copy</button> <a id="vcardLink" class="btn btn-sm btn-outline-info ms-2" href="#" download="Junaid_Mohammed.vcf">Save contact</a></div>
           </div>
-          <div class="mt-5 d-print-none"><form action="https://formspree.io/your@email.com"
-    method="POST">
+          <div class="mt-5 d-print-none"><form id="contactForm" action="https://formsubmit.co/junaidmohammed723@gmail.com" method="POST" target="formTarget">
   <div class="form-outline mb-4">
-    <input type="text" id="name" class="form-control" required/>
+    <input type="text" id="name" name="name" class="form-control" required/>
     <label class="form-label" for="name">Name</label>
   </div>
   <div class="form-outline mb-4">
-    <input type="email" id="email" class="form-control" required/>
+    <input type="email" id="email" name="email" class="form-control" required/>
     <label class="form-label" for="email">Email address</label>
   </div>
   <div class="form-outline mb-4">
-    <textarea class="form-control" style="resize: none;" id="message" rows="4" required></textarea>
+    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
     <label class="form-label" for="message">Message</label>
   </div>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New message from portfolio site">
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" id="formTime" name="_form_time" value="">
   <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
 </form>
+            <iframe title="form target" name="formTarget" id="formTarget" style="display:none"></iframe>
+            <div id="formSuccess" class="alert alert-success mt-3" role="alert" style="display:none">Thanks! Your message has been sent.</div>
           </div>
         </div>
-        <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52955.04328927503!2d-84.58015474958279!3d33.949095185738116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f510968647065d%3A0xb18756c6328ee981!2sMarietta%2C%20GA!5e0!3m2!1sen!2sus!4v1757271212279!5m2!1sen!2sus" width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52955.04328927503!2d-84.58015474958279!3d33.949095185738116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f510968647065d%3A0xb18756c6328ee981!2sMarietta%2C%20GA!5e0!3m2!1sen!2sus!4v1757271212279!5m2!1sen!2sus" width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </div>
     </div>
   </div>
@@ -323,6 +349,33 @@
         </div>
       </div>
     </footer>
+    <button id="backToTop" class="btn btn-info" aria-label="Back to top">▲</button>
+    <div id="lightbox" class="modal-overlay" aria-hidden="true" role="dialog">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">×</button>
+        <img id="lightboxImage" src="" alt="Project image"/>
+      </div>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Junaid Mohammed",
+      "url": "",
+      "email": "mailto:junaidmohammed723@gmail.com",
+      "jobTitle": "Information Technology Student",
+      "sameAs": [
+        "https://www.linkedin.com/in/junaid-s-mohammed",
+        "https://github.com/JMO723/lab-records"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Marietta",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      }
+    }
+    </script>
     <script src="scripts/mdb.min.js?ver=1.2.1"></script>
     <script src="scripts/aos.js?ver=1.2.1"></script>
     <script src="scripts/main.js?ver=1.2.1"></script>
