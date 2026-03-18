@@ -1,383 +1,315 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Junaid Mohammed - Resume</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.2" rel="stylesheet">
-    <meta name="description" content="Resume and portfolio of Junaid Mohammed, IT student focused on AWS, cloud, and cybersecurity.">
-    <meta property="og:title" content="Junaid Mohammed - Resume & Portfolio">
-    <meta property="og:description" content="Information Technology student with a focus on AWS and cloud technologies. View projects, experience, and contact details.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/headshot.jpg">
-    <meta property="og:url" content="/">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-  </head>
-  <body class="bg-light" id="top">
-    <div id="scroll-progress"><div id="scroll-progress-bar"></div></div>
-    <header class="d-print-none">
-      <div class="container text-center text-lg-left">
-        <div class="pt-4 clearfix">
-          <h1 class="site-title mb-0">Junaid Mohammed</h1>
-          <div class="site-nav"> 
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Portfolio</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title">References</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
-                </li>
-                <li class="nav-item">
-                  <button id="themeToggle" class="btn btn-sm btn-outline-secondary ms-3" type="button" aria-label="Toggle dark mode">Dark</button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junaid Mohammed | Cloud, Support & Systems</title>
+  <meta
+    name="description"
+    content="Portfolio for Junaid Mohammed featuring cloud projects, IT support experience, and a calm reef-inspired design."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+    <div class="bg-grid"></div>
+    <div class="spotlight"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand">Junaid<span>.</span>Mohammed</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
     </header>
-    <div class="page-content">
-      <div class="container">
-<div class="resume-container">
-  <div class="shadow-1-strong bg-white my-5" id="intro">
-    <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/header-background.jpg" alt="Abstract header background"/>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
-          <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/headshot.jpg" width="160" height="160" alt="Portrait of Junaid Mohammed"/></div>
-            <div class="header-bio mt-3">
-              <div data-aos="zoom-in" data-aos-delay="0">
-                <h2 class="h1">Junaid Mohammed</h2>
-                <p>Information Technology Student With a Passion for Cloud Technologies</p>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-copy reveal visible">
+            <p class="eyebrow">AWS Certified • IT Support • Cloud Systems</p>
+
+            <h1 class="hero-title">
+              <span class="typing-wrap">
+                <span class="typing-text">Junaid Mohammed</span>
+              </span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Cloud &amp; IT Support Specialist focused on practical troubleshooting, cloud fundamentals, and clear technical communication.
+            </p>
+
+            <p class="hero-text">
+              I enjoy solving technical problems, helping people understand systems, and building projects that feel thoughtful instead of overcomplicated.
+              This portfolio keeps the technical side of my work, but presents it through a calmer reef-inspired visual style.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="terminal-panel glass-card">
+              <div class="terminal-top">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <p>junaid@portfolio:~</p>
               </div>
-              <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
-                <nav role="navigation">
-                  <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/junaid-s-mohammed" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/JMO723/lab-records" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                    </li>
-                  </ul>
-                </nav>
+
+              <div class="terminal-body">
+                <div class="cmd-line"><span class="prompt">$</span><span>aws certifications --list</span></div>
+                <div class="cmd-line"><span class="prompt output">&gt;</span><span>AWS Certified Cloud Practitioner</span></div>
+                <div class="cmd-line"><span class="prompt">$</span><span>show focus --areas</span></div>
+                <div class="cmd-line"><span class="prompt output">&gt;</span><span>cloud support • troubleshooting • networking • cybersecurity</span></div>
+                <div class="cmd-line"><span class="prompt">$</span><span>theme --mode reef</span></div>
+                <div class="cmd-line"><span class="prompt output">&gt;</span><span>ambient interface enabled</span></div>
               </div>
-              <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="resume_2025_git.pdf" data-aos="fade-right" data-aos-delay="700">Download Resume</a><a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700">Hire Me</a></div>
+            </div>
+
+            <div class="reef-card glass-card">
+              <div class="reef-header">
+                <span>Ambient Reef</span>
+                <span class="badge">live</span>
+              </div>
+
+              <div class="reef-graphic">
+                <span class="bubble b1"></span>
+                <span class="bubble b2"></span>
+                <span class="bubble b3"></span>
+
+                <span class="seaweed w1"></span>
+                <span class="seaweed w2"></span>
+                <span class="seaweed w3"></span>
+
+                <span class="fish f1"></span>
+                <span class="fish f2"></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-    <div class="about-section">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="h2 fw-light mb-4">About Me</h2>
-          <p>Hello, and thank you for taking the time to get to know me! My name is Junaid Mohammed, and I am passionate about expanding my knowledge of cloud technologies and network architecture. I am currently pursuing my B.S. in Information Technology. I have obtained the <strong>Amazon Certified Practitioner</strong> certification and am comfortable working with many AWS services. I am a quick learner and a team player who gets the job done.</p>
-          <p>I am confident in my ability to optimize your systems to run securely and deliver consistent performance.</p>
-        </div>
-        <div class="col-md-5 offset-lg-1">
-          <div class="row mt-2">
-            <h2 class="h2 fw-light mb-4">Bio</h2>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Age</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">24</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">junaidmohammed723@gmail.com</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fab fa-linkedin pe-2 text-muted" style="width:24px;opacity:0.85;"></i> LinkedIn</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">www.linkedin.com/in/junaid-s-mohammed</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">+1 (404) 644-7985</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Address</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Marietta, GA</div>
-            </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container simple-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">About</p>
+            <h2>Technical work, presented with a little more life.</h2>
+            <p>
+              My background combines hands-on support, AWS-focused learning, networking concepts, and user-facing troubleshooting.
+              I wanted this site to reflect that clearly without feeling like a generic dark dashboard.
+            </p>
+          </div>
+
+          <div class="card-stack">
+            <article class="glass-card info-card reveal">
+              <h3>Support mindset</h3>
+              <p>I like solving problems clearly, helping users, and making technical concepts easier to understand.</p>
+            </article>
+
+            <article class="glass-card info-card reveal">
+              <h3>Cloud interest</h3>
+              <p>My projects focus on AWS fundamentals, access control, virtual desktop environments, and secure workflows.</p>
+            </article>
+
+            <article class="glass-card info-card reveal">
+              <h3>Creative presentation</h3>
+              <p>I care about design too, so I wanted this portfolio to feel memorable without losing professionalism.</p>
+            </article>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="skills" data-aos="fade-in" data-aos-delay="0">
-    <div class="skills-section">
-      <h2 class="h2 fw-light mb-4">Skills</h2>
-      <h3 class="h5 mt-3">Technical Skills</h3>
-      <ul class="skills-list">
-        <li><strong>Amazon S3:</strong> Managed cloud storage for work/lab assignments and student projects.</li>
-        <li><strong>Amazon EC2:</strong> Deployed virtual servers for work/lab assignments and troubleshooting exercises.</li>
-        <li><strong>Python:</strong> Used for scripting and automation in IT labs and personal projects.</li>
-        <li><strong>Amazon IAM:</strong> Configured user roles and permissions for secure access in AWS environments for work/lab assignments and personal projects.</li>
-        <li><strong>Wireshark:</strong> Applied for network traffic analysis in cybersecurity labs.</li>
-      </ul>
-      <h3 class="h5 mt-4">Soft Skills</h3>
-      <ul class="skills-list">
-        <li><strong>People-Oriented:</strong> Collaborated with classmates and faculty to solve technical challenges.
-          <ul>
-            <li>Worked with Chattahoochee Tech faculty on implementing new lessons and software in the Cybersecurity Department.</li>
-          </ul>
-        </li>
-        <li><strong>Effective Communicator:</strong> Presented technical concepts and solutions to peers and instructors.
-          <ul>
-            <li>Top 10 in Georgia for Extemporaneous and Impromptu Speaking</li>
-            <li>National finalist in Lockheed Martin sponsored NLMA speech competition</li>
-          </ul>
-        </li>
-        <li><strong>Eager to Learn:</strong> Continuously expanding my knowledge of IT and cloud technologies.</li>
-      </ul>
-      
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-    <div class="work-experience-section">
-      <h2 class="h2 fw-light mb-4">Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">AWS Specialist - Cyber Security Lab Tutor <span class="text-muted h6">at Chattahoochee Technical College</span></div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container simple-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Experience</p>
+            <h2>Support, troubleshooting, and communication.</h2>
           </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">Jan, 2022 - Present</div>
-            <div>
+
+          <div class="timeline-list">
+            <article class="timeline-card glass-card reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-meta">Current / Recent</div>
+              <h3>IT / Academic Support Role</h3>
+              <p class="timeline-place">Chattahoochee Technical College</p>
               <ul>
-                <li>I help students in IT, Networking, and Amazon Web Services. Students pass their classes with a 90% success rate.</li>
-                <li>Collaborate with team to protect IT environments and drive-up student engagement.</li>
-                <li>General hardware and network troubleshooting (student and school devices).</li>
-                <li>Server room maintenance for Computer Information Systems department.</li>
-                <li>General administrative tasks (generating troubleshooting tickets and updating teachers on student related matters).</li>
+                <li>Supported students across IT, networking, and AWS-related topics.</li>
+                <li>Troubleshot classroom and lab issues with a hands-on support mindset.</li>
+                <li>Helped translate technical concepts into practical guidance people could actually use.</li>
               </ul>
+            </article>
+
+            <article class="timeline-card glass-card reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-meta">Earlier Experience</div>
+              <h3>Customer-Facing Operations Roles</h3>
+              <p class="timeline-place">Fast-paced service environments</p>
+              <ul>
+                <li>Built communication, professionalism, and adaptability under pressure.</li>
+                <li>Learned to solve issues quickly while maintaining a strong user-focused attitude.</li>
+                <li>Developed habits that transfer well into support and systems roles.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Projects</p>
+            <h2>Simple, real, and practical.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card glass-card reveal">
+              <div class="project-art workspaces-art">
+                <span class="leaf l1"></span>
+                <span class="leaf l2"></span>
+                <span class="leaf l3"></span>
+              </div>
+              <div class="project-content">
+                <p class="project-tag">AWS WorkSpaces</p>
+                <h3>Virtual Desktop Deployment</h3>
+                <p>
+                  Built an AWS WorkSpaces environment to better understand cloud-hosted desktops, provisioning,
+                  user access, and troubleshooting workflows.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card glass-card reveal">
+              <div class="project-art iam-art">
+                <span class="ring ring-1"></span>
+                <span class="ring ring-2"></span>
+                <span class="seed-core"></span>
+              </div>
+              <div class="project-content">
+                <p class="project-tag">EC2 + S3 + IAM</p>
+                <h3>Role-Based Access Workflow</h3>
+                <p>
+                  Connected an EC2 instance to S3 using IAM roles to practice least-privilege access
+                  and avoid hardcoded credentials.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container simple-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Contact</p>
+            <h2>Let’s connect.</h2>
+            <p>I’m interested in cloud support, IT support, junior cloud engineering, and security-adjacent roles.</p>
+          </div>
+
+          <div class="contact-panel glass-card reveal">
+            <div class="contact-row">
+              <span>Email</span>
+              <a href="mailto:your-email@example.com">your-email@example.com</a>
+            </div>
+            <div class="contact-row">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Add your LinkedIn URL</a>
+            </div>
+            <div class="contact-row">
+              <span>GitHub</span>
+              <a href="https://github.com/JMO723" target="_blank" rel="noopener noreferrer">github.com/JMO723</a>
+            </div>
+            <div class="contact-row">
+              <span>Location</span>
+              <strong>Marietta, GA</strong>
             </div>
           </div>
         </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Freezer/Cooler/Deli Associate <span class="text-muted h6">at Sam's Club</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">June, 2022 - January, 2023</div>
-            <div>An associate at Sam’s club responsible for stocking and managing items in the freezer  and cooler departments.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-    <div class="education-section">
-      <h2 class="h2 fw-light mb-4">Education</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Bachelor’s of Information Technology <span class="text-muted h6">from Kennesaw State University</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2024 - Present</div>
-            <div></div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Associate’s of Cybersecurity <span class="text-muted h6">from Chattahoochee Technical College</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2022 - 2023</div>
-            <div></div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Amazon Certified Cloud Practitioner <span class="text-muted h6">from Amazon Web Services</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2023 - Present</div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
-    <div class="portfolio-section">
-      <h2 class="h2 fw-light mb-4">Projects</h2>
-      <div class="row g-0">
-        <div class="col-md-6 position-relative">
-          <a href="https://docs.google.com/document/d/1KdF9GraLpbChQQmm9MRxBhfjaL3nnhqM1el60V_r8IA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <img class="img-fluid project-image" src="images/aws_workspaces.jpg" width="800" height="500" alt="Screenshot of AWS Workspaces project" loading="lazy" decoding="async"/>
-          </a>
-          <button class="btn btn-sm btn-light project-lightbox" data-image="images/aws_workspaces.jpg" aria-label="View larger image">View</button>
-        </div>
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">AWS / Virtualization / Security </p>
-            <h3>Configuring a Virtual Desktop with AWS Workspaces</h3>
-            <p class="text-muted">Used Amazon Workspaces to provision an Ubuntu Virtual Desktop that can be accessed using the Amazon Workspaces client application.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row g-0 portfolio-reverse">
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-          <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">AWS / Virtualization / File Storage</p>
-            <h3>EC2-to-S3 Access Using IAM Roles</h3>
-            <p class="text-muted">Provisioned an S3 bucket and configured IAM roles to allow EC2 instances to access and write to the bucket securely.</p>
-          </div>
-        </div>
-        <div class="col-md-6 position-relative">
-          <a href="https://docs.google.com/document/d/1K3ujrB6-GpwdTnFe5YP28y6vvpTPHYbS3j-KTobY9tU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <img class="img-fluid project-image" src="images/post_ai_s3.png" width="800" height="500" alt="Diagram of EC2 to S3 access using IAM roles" loading="lazy" decoding="async"/>
-          </a>
-          <button class="btn btn-sm btn-light project-lightbox" data-image="images/post_ai_s3.png" aria-label="View larger image">View</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="references">
-    <div class="reference-section">
-      <h2 class="h2 fw-light mb-4">References</h2>
-      <div class="row"> 
-        <div class="col-md-6">
-          <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/reference-t.jpg" width="60" height="60" alt="Reference photo of Tony Evans" loading="lazy" decoding="async"/></div>
-            <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Tony Evans</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Information Security Analyst / Chattahoochee Technical College</p>
-            </div>
-          </div>
-          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Junaid is a passionate individual who knows how to clearly articulate technical information to non technical audiences. He displays a great ability to connect with people and provide guidance on all things cybersecurity. I really loved when he took time out his schedule to lead an AWS class for students looking to take their certification.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-    <div class="contant-section">
-      <h2 class="h2 fw-light text mb-4">Contact</h2>
-      <div class="row mb-4">
-        <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
-          <div class="mt-1">
-            <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> <a href="tel:+14046447985" id="phoneLink">+1 (404) 644-7985</a> <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" data-copy="+14046447985" aria-label="Copy phone">Copy</button></div>
-            <div class="h6 d-inline-flex align-items-center flex-wrap contact-actions"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i><a href="mailto:junaidmohammed723@gmail.com" id="emailLink">junaidmohammed723@gmail.com</a><button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="junaidmohammed723@gmail.com" aria-label="Copy email">Copy</button><a id="vcardLink" class="btn btn-sm btn-outline-info" href="#" download="Junaid_Mohammed.vcf">Save contact</a></div>
-          </div>
-          <div class="mt-5 d-print-none"><form id="contactForm" action="https://formsubmit.co/junaidmohammed723@gmail.com" method="POST" target="formTarget">
-  <div class="form-outline mb-4">
-    <input type="text" id="name" name="name" class="form-control" required/>
-    <label class="form-label" for="name">Name</label>
-  </div>
-  <div class="form-outline mb-4">
-    <input type="email" id="email" name="email" class="form-control" required/>
-    <label class="form-label" for="email">Email address</label>
-  </div>
-  <div class="form-outline mb-4">
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
-    <label class="form-label" for="message">Message</label>
-  </div>
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_subject" value="New message from portfolio site">
-  <input type="text" name="_honey" style="display:none">
-  <input type="hidden" id="formTime" name="_form_time" value="">
-  <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
-</form>
-            <iframe title="form target" name="formTarget" id="formTarget" style="display:none"></iframe>
-            <div id="formSuccess" class="alert alert-success mt-3" role="alert" style="display:none">Thanks! Your message has been sent.</div>
-          </div>
-        </div>
-        <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52955.04328927503!2d-84.58015474958279!3d33.949095185738116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f510968647065d%3A0xb18756c6328ee981!2sMarietta%2C%20GA!5e0!3m2!1sen!2sus!4v1757271212279!5m2!1sen!2sus" width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-      </div>
-    </div>
-  </div>
-</div></div>
-    </div>
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Junaid Mohammed</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/junaid-s-mohammed" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/JMO723/lab-records" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="text-small">
-          <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
-          <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
-        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Junaid Mohammed</p>
+        <p>Built with HTML, CSS, motion, and a calmer visual style.</p>
       </div>
     </footer>
-    <button id="backToTop" class="btn btn-info" aria-label="Back to top">▲</button>
-    <div id="lightbox" class="modal-overlay" aria-hidden="true" role="dialog">
-      <div class="modal-content">
-        <button class="modal-close" aria-label="Close">×</button>
-        <img id="lightboxImage" src="" alt="Project image"/>
-      </div>
-    </div>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Junaid Mohammed",
-      "url": "",
-      "email": "mailto:junaidmohammed723@gmail.com",
-      "jobTitle": "Information Technology Student",
-      "sameAs": [
-        "https://www.linkedin.com/in/junaid-s-mohammed",
-        "https://github.com/JMO723/lab-records"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Marietta",
-        "addressRegion": "GA",
-        "addressCountry": "US"
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll(".reveal").forEach((el, index) => {
+      if (!el.classList.contains("visible")) {
+        el.style.transitionDelay = `${Math.min(index * 60, 240)}ms`;
       }
+      observer.observe(el);
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const canvas = document.getElementById("particleCanvas");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = Math.max(document.documentElement.scrollHeight, window.innerHeight);
+      particles = Array.from({ length: Math.min(40, Math.floor(window.innerWidth / 36)) }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.6 + 0.4,
+        dx: (Math.random() - 0.5) * 0.12,
+        dy: (Math.random() - 0.5) * 0.12,
+        a: Math.random() * 0.35 + 0.08
+      }));
     }
-    </script>
-    <script src="scripts/mdb.min.js?ver=1.2.2"></script>
-    <script src="scripts/aos.js?ver=1.2.2"></script>
-    <script src="scripts/main.js?ver=1.2.2"></script>
-  </body>
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (const p of particles) {
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(120, 255, 220, ${p.a})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(drawParticles);
+    }
+
+    resizeCanvas();
+    drawParticles();
+    window.addEventListener("resize", resizeCanvas);
+
+    const spotlight = document.querySelector(".spotlight");
+    window.addEventListener("pointermove", (e) => {
+      spotlight.style.setProperty("--x", `${e.clientX}px`);
+      spotlight.style.setProperty("--y", `${e.clientY}px`);
+    });
+  </script>
+</body>
 </html>
