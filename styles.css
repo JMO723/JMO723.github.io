@@ -826,10 +826,11 @@ section {
   }
 
   .hero-visual {
-    width: 100%;
-    max-width: 720px;
-    justify-self: stretch;
-    left: 0;
+  width: 100%;
+  max-width: 100%;
+  justify-self: center;
+  margin: 0 auto;
+  left: 0;
   }
 }
 
@@ -837,25 +838,53 @@ section {
   .nav-wrap {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
     padding: 0.9rem 0;
   }
 
   .site-nav {
-    gap: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    width: 100%;
   }
 
   .section {
-    padding: 4.4rem 0;
+    padding: 3rem 0;
+    min-height: auto;
   }
 
+  .hero {
+    min-height: auto;
+    padding-top: 1rem;
+  }
+  
   .hero-title {
-    font-size: clamp(2.4rem, 11vw, 4rem);
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1;
   }
 
-  .typing-wrap,
+  .typing-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .typing-text {
-    width: max-content;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    border-right: 0;
+    clip-path: none;
+    animation: none;
+  }
+
+  .hero-subtitle,
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .reef-graphic {
+    height: 180px;
   }
 
   .contact-row,
@@ -864,25 +893,29 @@ section {
     align-items: flex-start;
   }
 
-  .reef-graphic {
-    height: 200px;
-  }
 }
 
 @media (max-width: 480px) {
+  .container {
+    width: min(calc(100% - 1.25rem), var(--max));
+  }
   .hero-title {
-    font-size: clamp(2.2rem, 12vw, 3.4rem);
+    font-size: clamp(1.8rem, 10vw, 2.5rem);
+  }
+
+  .terminal-body {
+    font-size: 0.82rem;
   }
 
   .fish {
-    width: 24px;
-    height: 12px;
+    width: 22px;
+    height: 11px;
   }
 
   .fish::after {
-    width: 8px;
-    height: 8px;
-    right: -6px;
+    width: 7px;
+    height: 7px;
+    right: -5px;
     top: 2px;
   }
 }
