@@ -581,9 +581,9 @@ section {
 }
 
 .project-card {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-art {
@@ -735,15 +735,6 @@ section {
   transform: translateY(0);
 }
 
-.project-card {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.section .container {
-  margin: 0 auto;
-}
 
 @keyframes typing-reveal {
   from {
