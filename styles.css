@@ -734,6 +734,12 @@ section {
   transform: translateY(0);
 }
 
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 @keyframes typing-reveal {
   from {
     clip-path: inset(0 100% 0 0);
