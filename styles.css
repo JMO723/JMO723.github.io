@@ -740,6 +740,10 @@ section {
   display: block;
 }
 
+.section .container {
+  margin: 0 auto;
+}
+
 @keyframes typing-reveal {
   from {
     clip-path: inset(0 100% 0 0);
