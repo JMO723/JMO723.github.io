@@ -692,20 +692,30 @@ section {
 }
 
 .contact-panel {
-  padding: 1.2rem;
+  padding: 1.4rem;
   display: grid;
-  gap: 0.85rem;
+  gap: 1rem;
+  width: 100%;
 }
 
 .contact-row {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
   border-radius: 18px;
   background: rgba(5, 20, 22, 0.44);
   border: 1px solid rgba(162, 220, 201, 0.1);
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+}
+
+.contact-row a,
+.contact-row strong {
+  max-width: 100%;
+  word-break: break-word;
+  text-align: left;
 }
 
 .contact-row span {
