@@ -485,7 +485,7 @@ section {
 
 .simple-grid {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-columns: 0.85fr 1.15fr;
   gap: 2rem;
   align-items: start;
 }
